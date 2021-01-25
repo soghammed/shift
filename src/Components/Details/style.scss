@@ -1,0 +1,123 @@
+.details-box{
+	position:relative;
+	margin:auto;
+	max-width: 480px;
+	//height: 183.01px;
+	margin:25px auto 0;	
+	//left: 516px;
+	//top: 127px;
+	.detail-item{
+		display:grid;
+		grid-template-columns: 12fr 1fr 1fr;
+		margin:0.8em;
+		grid-gap:1em;
+		margi
+		div:first-child{
+			justify-self:start;
+		}
+		div:nth-child(2){
+			justify-self: end;
+			//min-width:100px;
+		}
+		&:last-child{
+			//min-width:200px;
+		}
+	}
+}
+.benefits{
+	position: relative;
+	margin:auto;
+	display:flex;
+	justify-content:center;
+	grid-template-columns:repeat(3, 1fr);
+	grid-gap:1.2em;
+	//width: 505px;
+	//height: 139px;
+	//left: 471px;
+	//top: 317px;
+	.tile{
+		height:120px;
+		padding:6px 4px;
+		background-color:#F9FAFC;
+		border-radius:8px;
+		text-align:center;
+		div{
+			position:relative;
+			align-self:center;
+			vertical-align:center;
+			top:20px;
+		}
+		.icon{
+		}
+		.text{
+			width:140px;
+		  	white-space:normal;
+			font-weight:bold;
+		}
+	}
+}
+.c-badge{
+   	padding: 5px 20px;
+    white-space: nowrap;
+    color: white;
+    background: #D71A64;
+    box-shadow: 0px 1px 3px grey;
+    border-radius: 50px;
+}
+.pickup-text{
+	margin:2em auto 0;
+	//position: absolute;
+	width: 100%;
+	height: 44px;
+	//left: 467px;
+	//top: 474px;
+	.highlight{
+		color:#D71A64;
+	}
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+
+	color: #000000;
+}
+.reset-font{
+	font-family: sans-serif;
+}
+
+.pickup-time{
+	position: relative;
+	width: 500px;
+	height: 64px;
+	margin:auto;
+}
+// should be done using makestyles and editing material ui correctly instead of below
+.MuiSlider-thumb{
+	width:20px !important;
+	height:20px !important;
+    border: 4px solid #D71A64 !important;
+    background-color: white !important;
+    margin-top:-9px !important;
+}
+.MuiSlider-rail{
+	height: 6px !important;
+    top: 11px !important;
+    border-radius:10px !important;
+}
+.MuiSlider-track{
+	top: 11px !important;
+    height: 6px !important;
+}
+.MuiSlider-markLabelActive{
+	color: #D71A64 !important;
+    font-weight: bold !important;
+}
+.MuiCheckbox-root{
+	color: #D71A64 !important;
+}
+.MuiCheckbox-colorSecondary, .MuiCheckbox-colorSecondary.Mui-checked{
+	position:relative;
+	top:-10px;
+	right:10px;
+}

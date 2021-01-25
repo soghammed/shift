@@ -1,3 +1,4 @@
 ## Instructions
 
-- npm install && npm start
+- [View Live Demo](http://test.dontlie.co.uk) 
+- OR npm install && npm start

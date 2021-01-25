@@ -85,14 +85,14 @@ export default class Options extends React.Component {
 				word = moment(obj.date).format('dddd');
 			}
 			return (
-				<div class="option-tile">
+				<div key={i} className="option-tile">
 					<div>{word}</div>
 					<div>{moment(obj.date).format('Do MMMM')}</div>
-					<div class="option-action">
-						<div class="price">£<span class="reset-font">{obj.price}</span></div>
-						{obj.cheapest ? (<div class="best-price">Best Price</div>) : ''}
-						<div class="icon">
-							<i class="arrow"><ArrowForwardIos fontSize='small' color="secondary"/></i>
+					<div className="option-action">
+						<div className="price">£<span className="reset-font">{obj.price}</span></div>
+						{obj.cheapest ? (<div className="best-price">Best Price</div>) : ''}
+						<div className="icon">
+							<i className="arrow"><ArrowForwardIos fontSize='small' color="secondary"/></i>
 						</div>
 					</div>
 				</div>
@@ -102,7 +102,7 @@ export default class Options extends React.Component {
 
 	render() {
 		return (
-			<div class="options-box">
+			<div className="options-box">
 			{this.renderTiles()}
 			</div>
 		)

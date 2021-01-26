@@ -1,12 +1,13 @@
 .options-box{
 	position:relative;
 	margin: 10px auto;	
-	width:55%;
+	width:60%;
 	display:grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: minmax(auto, 10%) minmax(auto, 10%) minmax(auto, 10%);
 	grid-gap:1em;
+	justify-content:center;
 	.option-tile{
-		min-width:120px;
+		width:150px;
 		border:1px solid #F9FAFC;
 		font-size:0.9em;
 		height:60px;

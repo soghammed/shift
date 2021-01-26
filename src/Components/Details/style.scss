@@ -50,9 +50,11 @@
 		.icon{
 		}
 		.text{
-			width:140px;
-		  	white-space:normal;
-			font-weight:bold;
+			width: 140px;
+		    top: 7px;
+		    white-space: normal;
+		    font-weight: bold;
+		    line-height: 1.5;
 		}
 	}
 }
@@ -88,7 +90,7 @@
 
 .pickup-time{
 	position: relative;
-	width: 50%;
+	width: 43%;
 	height: 64px;
 	margin:auto;
 }

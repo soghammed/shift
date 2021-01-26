@@ -2,7 +2,7 @@ import React from 'react'
 import moment from 'moment';
 import style from './style.scss'
 import {ArrowForwardIos} from '@material-ui/icons';
-
+import { Container } from '@material-ui/core';
 export default class Options extends React.Component {
 
 	constructor(props){
@@ -102,9 +102,11 @@ export default class Options extends React.Component {
 
 	render() {
 		return (
-			<div className="options-box">
-			{this.renderTiles()}
-			</div>
+			<Container>
+				<div className="options-box">
+				{this.renderTiles()}
+				</div>
+			</Container>
 		)
 	}
 }
